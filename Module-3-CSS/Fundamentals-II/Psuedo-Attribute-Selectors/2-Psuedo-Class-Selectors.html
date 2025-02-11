@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and Pseudo-elements Example</title>
+    <style>
+        /* Pseudo-classes */
+        li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        li:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        li:hover {
+            color: white;
+            background-color: black;
+        }
+
+        /* Pseudo-elements */
+        p::before {
+            content: "Note: ";
+            color: red;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: " End of paragraph.";
+            color: blue;
+            font-weight: bold;
+        }
+
+        span::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes and Pseudo-elements Example</h1>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <p>This is a paragraph. <span>Highlighted text.</span></p>
+</body>
+</html>

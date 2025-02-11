@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors Example</title>
+    <style>
+        /* Attribute Selectors */
+        a[href] {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a[target="_blank"] {
+            color: red;
+        }
+
+        input[type="text"] {
+            border: 2px solid green;
+        }
+
+        input[type="email"] {
+            border: 2px solid blue;
+        }
+
+        button[disabled] {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors Example</h1>
+    <a href="https://example.com" target="_blank">External Link</a>
+    <a href="/internal">Internal Link</a>
+    <input type="text" placeholder="Enter text">
+    <input type="email" placeholder="Enter email">
+    <button disabled>Disabled Button</button>
+</body>
+</html>

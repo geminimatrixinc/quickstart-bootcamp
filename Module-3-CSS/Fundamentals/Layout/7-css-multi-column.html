@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-column Layout</title>
+<style>
+    /* Creating a multi-column layout */
+    .multi-column-container {
+        column-count: 3; /* Number of columns */
+        column-gap: 20px; /* Gap between columns */
+    }
+
+    /* Styling the columns */
+    .multi-column-item {
+        break-inside: avoid; /* Prevent column breaks within items */
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+    <div class="multi-column-container">
+        <div class="multi-column-item">Column 1</div>
+        <div class="multi-column-item">Column 2</div>
+        <div class="multi-column-item">Column 3</div>
+        <div class="multi-column-item">Column 4</div>
+        <div class="multi-column-item">Column 5</div>
+        <div class="multi-column-item">Column 6</div>
+    </div>
+</body>
+</html>

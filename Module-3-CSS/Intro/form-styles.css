@@ -1,0 +1,23 @@
+/* Style for text input */
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

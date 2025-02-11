@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Border Colors Example</title>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        float: left;
+        border-width: 5px;
+        border-style: solid;
+    }
+
+    /* HEX color */
+    #hex-color {
+        border-color: #FF0000; /* Red */
+    }
+
+    /* RGB color */
+    #rgb-color {
+        border-color: rgb(0, 255, 0); /* Green */
+    }
+
+    /* RGBA color */
+    #rgba-color {
+        border-color: rgba(0, 0, 255, 0.5); /* Blue with 50% transparency */
+    }
+</style>
+</head>
+<body>
+    <div id="hex-color"></div>
+    <div id="rgb-color"></div>
+    <div id="rgba-color"></div>
+</body>
+</html>

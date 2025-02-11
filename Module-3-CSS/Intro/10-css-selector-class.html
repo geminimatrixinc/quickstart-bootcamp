@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Styles for elements with class "example" */
+        .example {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Styles for <p> elements with class "special" */
+        p.special {
+            background-color: yellow;
+        }
+
+        /* Styles for elements with both classes "class1" and "class2" */
+        .class1.class2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p class="example">This paragraph has class "example".</p>
+    <p class="special">This paragraph has class "special".</p>
+    <p class="example special">This paragraph has both classes.</p>
+
+    <div class="special">this should not have a yellow background</div>
+</body>
+</html>

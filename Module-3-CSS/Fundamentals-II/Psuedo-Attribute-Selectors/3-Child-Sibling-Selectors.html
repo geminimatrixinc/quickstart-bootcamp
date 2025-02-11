@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child and Sibling Combinators Example</title>
+    <style>
+        /* Child Combinator */
+        .parent > p {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        /* General Sibling Combinator */
+        .first-sibling ~ p {
+            color: green;
+        }
+
+        /* Adjacent Sibling Combinator */
+        .first-sibling + p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child and Sibling Combinators Example</h1>
+    <div class="parent">
+        <p>Direct Child Paragraph 1</p>
+        <p>Direct Child Paragraph 2</p>
+        <div>
+            <p>Nested Paragraph</p>
+        </div>
+        <p class="first-sibling">First Sibling</p>
+        <p>Second Sibling</p>
+        <p>Third Sibling</p>
+    </div>
+</body>
+</html>

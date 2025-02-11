@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rounded Borders Example</title>
+<style>
+    /* Rounded border with a 10px radius for all corners */
+    .rounded-border {
+        width: 200px;
+        height: 100px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+        margin-bottom: 20px;
+    }
+
+    /* Rounded border with different radii for different corners */
+    .custom-rounded-border {
+        width: 200px;
+        height: 100px;
+        border: 2px solid #000;
+        border-radius: 10px 5px; /* top-left/bottom-right: 10px, top-right/bottom-left: 5px */
+        background-color: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+    <div class="rounded-border"></div>
+    <div class="custom-rounded-border"></div>
+</body>
+</html>

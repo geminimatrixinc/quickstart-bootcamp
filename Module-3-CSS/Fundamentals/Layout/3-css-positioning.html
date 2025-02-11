@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positioning Examples</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+  }
+
+  .static {
+    background-color: lightblue;
+  }
+
+  .relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightgreen;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: lightcoral;
+  }
+
+  .fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightskyblue;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="static">Static</div>
+    <div class="relative">Relative</div>
+    <div class="absolute">Absolute</div>
+    <div class="fixed">Fixed</div>
+  </div>
+</body>
+</html>

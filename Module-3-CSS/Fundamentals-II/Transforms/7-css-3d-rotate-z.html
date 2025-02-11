@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transformations: RotateZ</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+
+        .rotateZ {
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box rotateZ">RotateZ</div>
+    </div>
+</body>
+</html>
