@@ -1,16 +1,7 @@
-xxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-xxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# quickstart-bootcamp
+
+
+This change was updatd on github.com
+
+##
+edit this file
