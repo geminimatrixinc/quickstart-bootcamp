@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(198, 198, 198);
+}
+
+main {
+  background-color: burlywood;
+}
+
+p {
+  background-color: blue;
+  color:aliceblue
+}
+
+h1 {
+  color:black
+}
+
+.container-fluid {
+  background-color: aqua;
+}
+
+.row {
+  background-color: coral;
+}

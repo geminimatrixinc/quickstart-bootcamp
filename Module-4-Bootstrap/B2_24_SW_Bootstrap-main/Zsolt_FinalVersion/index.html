@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Static Template</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+    <body>
+        <header class="page-header">
+            <span class="logo">Yoga Sanctuary</span>
+            <nav class="page-header-menu-container page-header-menu-container--regular">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#classes" class="menu-link">Classes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="schedule" class="menu-link">Schedule</a>
+                        <ul class="d-none">
+                            <li><a href="#" class="menu-link">Description</a></li>
+                            <li><a href="#" class="menu-link">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#" class="menu-link">Connect</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+                </ul>
+            </nav>
+            <nav class="page-header-menu-container page-header-menu-container--social d-400minus-none">
+                <ul class="social">
+                    <li class="menu-item">
+                        <a href="#">
+                            <img class="icon" src="./assets/envelope-regular.svg" alt="Envelope" />
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <img class="icon" src="./assets/facebook-f-brands.svg" alt="Facebook" />
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <img class="icon" src="./assets/instagram-brands.svg" alt="Instagram" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <div class="main-banner">
+                    <h1 class="main-banner-title">Stretch, Relax, and Let Go</h1>
+                </div>
+            </header>
+            <div class="main-container-with-margin">
+                <p class="tagline">A yoga studio in the heart of Gotham City offering innovative trainings.</p>
+                <hr class="hr" />
+                <section id="classes" class="articles-container">
+                    <h2 class="section-title">This month</h2>
+                    <div class="three-columns-container-md">
+                        <section class="class-container three-columns-container-md__item">
+                            <h3 class="column-heading">Featured class</h3>
+                            <img src="./assets/hotyoga1.png" alt="Hot yoga." />
+                            <h4 class="column-heading">Sonya Lagerlöf</h4>
+                            <p class="column-p">Sonya is an expert of Yoga at 101 degrees.</p>
+                            <button class="button">More info</button>
+                        </section>
+                        <section class="class-container three-columns-container-md__item">
+                            <h3 class="column-heading">Featured class</h3>
+                            <img src="./assets/leggings.png" alt="Yoga leggings." />
+                            <h4 class="column-heading">Yoga Leggings for Sale</h4>
+                            <p class="column-p">
+                                Own the best yoga leggings in town for extra comfort, balance, and energy.
+                            </p>
+                            <button class="button">More info</button>
+                        </section>
+                        <section class="class-container three-columns-container-md__item">
+                            <h3 class="column-heading">Featured class</h3>
+                            <img src="./assets/distance.png" alt="Keep your distance." />
+                            <h4 class="column-heading">Keep Your Distance</h4>
+                            <p class="column-p">Others may lose balance and take you down too by accident.</p>
+                            <button class="button">More info</button>
+                        </section>
+                    </div>
+                </section>
+                <hr class="hr" />
+                <section class="testimonial-container">
+                    <blockquote class="testimonial-quote">
+                        <q
+                            >This has been the best yoga session I have ever experienced. During the exercises, I was
+                            floating 4 yards above ground even though the room was only 3 yards tall.</q
+                        >
+                        - <em>Emerald Hill</em>
+                    </blockquote>
+                    <button class="button">Read testimonials</button>
+                </section>
+                <hr class="hr" />
+                <section>
+                    <h2 class="section-title">Instagram</h2>
+                    <div class="gallery">
+                        <img class="gallery-image" src="./assets/pattern1.png" alt="Instagram pattern 1" />
+                        <img class="gallery-image" src="./assets/pattern2.png" alt="Instagram pattern 2" />
+                        <img class="gallery-image" src="./assets/pattern3.png" alt="Instagram pattern 3" />
+                        <img class="gallery-image" src="./assets/pattern4.png" alt="Instagram pattern 4" />
+                        <img class="gallery-image" src="./assets/pattern5.png" alt="Instagram pattern 5" />
+                        <img class="gallery-image" src="./assets/pattern6.png" alt="Instagram pattern 6" />
+                    </div>
+                </section>
+                <section class="location-container">
+                    <h2>Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.234087807528!2d-96.61158714892882!3d33.05030348079657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1ae5447c4855%3A0x204b14436c5b4964!2sSouthfork%20Ranch!5e0!3m2!1sde!2sde!4v1643421591431!5m2!1sde!2sde"
+                        class="southfork-map"
+                        loading="lazy"
+                    ></iframe>
+                </section>
+                <label for="form-toggler" class="fixed-link-circle left">?</label>
+                <input type="checkbox" id="form-toggler" />
+                <form action="#" method="GET" class="contact-form">
+                    <div class="form-row">
+                        <label class="label-top" for="name-field"> Name: </label>
+                        <input type="text" id="name-field" name="name" placeholder="Enter your name" />
+                    </div>
+                    <div class="form-row">
+                        <label class="label-top" for="email-field">Email:</label>
+                        <input id="email-field" type="email" name="email" placeholder="Enter your email" />
+                    </div>
+                    <div class="form-row">
+                        <label class="label-top" for="message-field">Message:</label>
+                        <textarea
+                            name="message"
+                            id="message-field"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message"
+                        ></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="checkbox" name="data-protection" id="data-protection-field" />
+                        <label for="data-protection-field"> I accept the data protection guidelines. </label>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <a class="fixed-link-circle right" href="#">↑</a>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; Yoga Sanctuary 2022</p>
+            <p>The Institute, Floor -4, 10000.</p>
+            <ul class="social">
+                <li class="menu-item">
+                    <a href="#">
+                        <img class="icon" src="./assets/envelope-regular.svg" alt="Envelope" />
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img class="icon" src="./assets/facebook-f-brands.svg" alt="Facebook" />
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img class="icon" src="./assets/instagram-brands.svg" alt="Instagram" />
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>

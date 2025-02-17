@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Static Template</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./styles/styles-bootstrap.css" />
+    </head>
+    <body>
+        <header class="page-header">
+            <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="#">Yoga Sanctuary</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#headerNavigation"
+                        aria-controls="headerNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headerNavigation">
+                        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                            <li class="nav-item menu-item">
+                                <a class="nav-link active" aria-current="page" href="#">Classes</a>
+                            </li>
+                            <li class="nav-item dropdown menu-item">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Schedule
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item"><a class="dropdown-item" href="#">Description</a></li>
+                                    <li class="menu-item"><a class="dropdown-item" href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="#">Connect</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text">
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="./assets/envelope-regular.svg" alt="Envelope" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="./assets/facebook-f-brands.svg" alt="Facebook" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="./assets/instagram-brands.svg" alt="Instagram" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container-fluid main-banner">
+                <h1 class="main-banner-title">Stretch, Relax, and Let Go</h1>
+            </section>
+            <section class="container">
+                <section class="row my-4">
+                    <p class="col tagline">A yoga studio in the heart of Gotham City offering innovative trainings.</p>
+                </section>
+                <hr class="opacity-25" />
+                <section class="row my-4">
+                    <h2 class="col col-12 section-title">This Month</h2>
+                    <section class="col col-12 col-md-4">
+                        <h3 class="column-heading">Featured class</h3>
+                        <img class="w-100" src="./assets/hotyoga1.png" alt="Hot yoga." />
+                        <h4 class="column-heading">Sonya Lagerlöf</h4>
+                        <p class="column-p">Sonya is an expert of Yoga at 101 degrees.</p>
+                        <button class="btn btn-outline-dark">More info</button>
+                    </section>
+                    <section class="col col-12 col-md-4">
+                        <h3 class="column-heading">Featured class</h3>
+                        <img class="w-100" src="./assets/leggings.png" alt="Yoga leggings." />
+                        <h4 class="column-heading">Yoga Leggings for Sale</h4>
+                        <p class="column-p">
+                            Own the best yoga leggings in town for extra comfort, balance, and energy.
+                        </p>
+                        <button class="btn btn-outline-dark">More info</button>
+                    </section>
+                    <section class="col col-12 col-md-4">
+                        <h3 class="column-heading">Featured class</h3>
+                        <img class="w-100" src="./assets/distance.png" alt="Keep your distance." />
+                        <h4 class="column-heading">Keep Your Distance</h4>
+                        <p class="column-p">Others may lose balance and take you down too by accident.</p>
+                        <button class="btn btn-outline-dark">More info</button>
+                    </section>
+                </section>
+                <hr class="opacity-25" />
+                <section class="row my-4">
+                    <blockquote class="col col-12 testimonial-quote">
+                        <q
+                            >This has been the best yoga session I have ever experienced. During the exercises, I was
+                            floating 4 yards above ground even though the room was only 3 yards tall.</q
+                        >
+                        - <em>Emerald Hill</em>
+                    </blockquote>
+                    <div class="col col-12">
+                        <button class="btn btn-outline-dark">Read testimonials</button>
+                    </div>
+                </section>
+                <hr class="opacity-25" />
+                <section class="row g-3 my-4">
+                    <h2 class="section-title col col-12">Instagram</h2>
+                    <img
+                        class="col col-12 col-sm-6 col-md-4 col-xxl-2"
+                        src="./assets/pattern1.png"
+                        alt="Instagram pattern 1"
+                    />
+                    <img
+                        class="col col-12 col-sm-6 col-md-4 col-xxl-2"
+                        src="./assets/pattern2.png"
+                        alt="Instagram pattern 2"
+                    />
+                    <img
+                        class="col col-12 col-sm-6 col-md-4 col-xxl-2"
+                        src="./assets/pattern3.png"
+                        alt="Instagram pattern 3"
+                    />
+                    <img
+                        class="col col-12 col-sm-6 col-md-4 col-xxl-2"
+                        src="./assets/pattern4.png"
+                        alt="Instagram pattern 4"
+                    />
+                    <img
+                        class="col col-12 col-sm-6 col-md-4 col-xxl-2"
+                        src="./assets/pattern5.png"
+                        alt="Instagram pattern 5"
+                    />
+                    <img
+                        class="col col-12 col-sm-6 col-md-4 col-xxl-2"
+                        src="./assets/pattern6.png"
+                        alt="Instagram pattern 6"
+                    />
+                </section>
+                <hr class="opacity-25" />
+                <section class="row my-4 d-none d-sm-flex">
+                    <h2 class="section-title">Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.234087807528!2d-96.61158714892882!3d33.05030348079657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1ae5447c4855%3A0x204b14436c5b4964!2sSouthfork%20Ranch!5e0!3m2!1sde!2sde!4v1643421591431!5m2!1sde!2sde"
+                        class="southfork-map"
+                        loading="lazy"
+                    ></iframe>
+                </section>
+            </section>
+            <!-- Button trigger modal -->
+            <a class="fixed-link-circle left" data-bs-toggle="modal" data-bs-target="#formModal">?</a>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="formModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="formModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="formModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="GET" class="contact-form">
+                                <div class="mb-3">
+                                    <label for="contact-name" class="form-label">Name</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="contact-name"
+                                        name="contact-name"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-email" class="form-label">E-mail</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="contact-email"
+                                        name="contact-email"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="3"
+                                        name="message"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="data-protection-field"
+                                        name="accept-toc"
+                                        required
+                                    />
+                                    <label class="form-check-label" for="data-protection-field"
+                                        >I accept the data protection guidelines.</label
+                                    >
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <button type="submit" class="btn btn-primary">Submit message</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="fixed-link-circle right" href="#">↑</a>
+        </main>
+        <footer class="container-fluid">
+            <div class="row text-center m-4">
+                <div class="col col-12 col-md-5 order-1">&copy; Yoga Sanctuary 2022</div>
+                <div class="col col-12 col-md-2 order-3 order-md-2">
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="./assets/envelope-regular.svg" alt="Envelope" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="./assets/facebook-f-brands.svg" alt="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="./assets/instagram-brands.svg" alt="Instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-12 col-md-5 order-2 order-md-3">The Institute, Floor -4, 10000.</div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

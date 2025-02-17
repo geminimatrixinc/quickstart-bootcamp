@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(198, 198, 198);
+}
+
+main {
+  background-color: burlywood;
+}
+
+p {
+  background-color: blue;
+  color:aliceblue
+}
+
+h1 {
+  color:black
+}
+
+.navbar_style {
+  background-color: black;
+}
+
+.nav-link {
+  color:white
+}
+
+.nav-link.active {
+  color: yellow !important;
+}
+
+.nav-link.dropdown-toggle {
+  color:yellow !important;
+}
