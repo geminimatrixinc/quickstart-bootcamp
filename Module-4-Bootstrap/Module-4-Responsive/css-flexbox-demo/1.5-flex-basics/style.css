@@ -1,0 +1,37 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap; /* this will allow, green box to wrap, when min-wdith reached*/
+}
+
+.box {
+  height: 100px;
+  min-width: 200px; /* limit > 200px, where we can no longer shrink, and green will be skewed */
+  flex-grow: 1;
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: green;
+}

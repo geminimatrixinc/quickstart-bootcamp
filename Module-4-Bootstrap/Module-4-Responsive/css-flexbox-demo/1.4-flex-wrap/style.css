@@ -1,0 +1,44 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 100px;
+  /*min-width: 200px;*/ /* flex-basis, is similar to min-width, however we set different starting widths */
+  flex-grow: 1; /* boxes will grow at the same rate, but they have different width's assigned */
+
+  /* example - difference between flex-basis and min-width. min-width will not shirnk, scrollbar will apepar */
+  /* flex-basis: 500px; */
+  /* min-wdith: 500px; */
+}
+
+.one {
+  background: red;
+  flex-basis: 100px;
+}
+
+.two {
+  background: blue;
+  flex-basis: 200px;
+}
+
+.three {
+  background: green;
+  flex-basis: 300px;
+}

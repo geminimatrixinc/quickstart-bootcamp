@@ -1,0 +1,40 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+
+.box {
+  height: 100px;
+  width: 320px;
+}
+
+/* opposite of flex grow, caclulate the rate at which the boxes shrink.*/
+.one {
+  background: red;
+  flex-shrink: 1;
+}
+
+.two {
+  background: blue;
+  flex-shrink: 2;
+}
+
+.three {
+  background: green;
+  flex-shrink: 3; /* 6 - bigger number, more it will shrink */
+}

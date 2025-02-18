@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%; /* Set container width to 80% of the viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center-align the content inside the container */
+    border: 5px solid red;
+}
+
+.responsive-image {
+    max-width: 60%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+}

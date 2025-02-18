@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Example</title>
+<style>
+  /* Default styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-items li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .menu-items li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-items li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Mobile menu styles */
+  @media only screen and (max-width: 768px) {
+    .menu-items {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: block;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  /* Desktop menu styles */
+  @media only screen and (min-width: 769px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  
+</style>
+</head>
+<body>
+  <nav class="desktop-menu">
+    <ul class="menu-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="mobile-menu">
+    <button class="menu-toggle">&#9776; Menu</button>
+    <ul class="menu-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
