@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Audio</title>
+    <style>
+        /* Hide the audio controls */
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="myAudio" src="path_to_your_audio_file.mp3"></audio>
+
+    <script>
+        // Get the audio element
+        const audio = document.getElementById('myAudio');
+        // Play the audio when the page loads
+        window.addEventListener('load', () => {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
