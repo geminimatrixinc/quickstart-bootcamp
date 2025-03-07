@@ -1,6 +1,8 @@
-var frameWork = "react";
+var frameWork = "ember"; // angular, jquery, vue, react, .net, rust, java..
 
 console.log("The framework is" + " " + frameWork);
+
+debugger
 
 
 
@@ -31,7 +33,9 @@ switch (frameWork) {
   case "bootstrap":
     console.log("javascript");
     break;
-  default:
+  
+    default:
     console.log("no framework");
     break;
 }
+

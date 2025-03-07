@@ -12,6 +12,6 @@ const numberArray = [ 2, 4, 6, 8];
 const stringArray = [ 'eat', 'work', 'sleep'];
 
 // multiple data types array
-const newData = ['work', 'exercise', 1, true];
+const newData = ['work', 'exercise', 1, true, undefined, null, {}];
 
 console.log(newData);

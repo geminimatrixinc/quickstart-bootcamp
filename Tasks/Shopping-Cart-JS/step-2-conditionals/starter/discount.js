@@ -13,3 +13,4 @@ let discountCode = "SAVE10"; // Try changing this to "SAVE20" or any other value
 
 // Implement your switch statement below
 
+// HOMEWORK
