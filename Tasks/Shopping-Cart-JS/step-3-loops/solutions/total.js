@@ -14,3 +14,12 @@ let products = [
     { id: 2, name: "Beer", price: 3.99 } // 2
 ];
 
+// Calculate the total price of all products
+
+let totalPrice = 0;
+
+for (let i = 0; i < products.length; i++) {
+    totalPrice += products[i].price;
+}
+
+console.log("Total price:", totalPrice); // Output: Total price: 6.97

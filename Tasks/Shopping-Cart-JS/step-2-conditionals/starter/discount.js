@@ -10,7 +10,16 @@
 
 let totalAmount = 100;
 let discountCode = "SAVE10"; // Try changing this to "SAVE20" or any other value
-
+// SAVE10DOLLARS
+// TENOFF
 // Implement your switch statement below
 
 // HOMEWORK
+
+if (discountCode === "SAVE10" || discountCode === "SAVE10DOLLARS" || discountCode === "TENOFF") {
+    totalAmount = totalAmount * 0.1;
+} else if (discountCode === "SAVE20" || discountCode === "SAVE20DOLLARS") {
+    totalAmount = totalAmount * 0.2;
+}
+
+console.log(`Total after discount: ${totalAmount}`);

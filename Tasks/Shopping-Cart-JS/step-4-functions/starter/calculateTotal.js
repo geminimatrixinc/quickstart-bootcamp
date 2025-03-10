@@ -4,9 +4,11 @@
 
 // Task Description: Refactor the previous script by creating a function called calculateTotal that:
 
-// Takes an array of product objects as a parameter.
-// Returns the total price of all products.
-// Invoke the function with the products array and print the result.
+// Define a function called calculateTotal to calculate total price
+// should return the total price of all products
+// should take an array of product objects as a parameter
+// should be invoked with the products array ie. calculateTotal(products)
+// should print the result
 
 // Initialize products
 let products = [
@@ -14,7 +16,14 @@ let products = [
     { id: 2, name: "Bread", price: 1.99 }
 ];
 
-// Define a function to calculate total price
+// Calculate the total price of all products
+let totalPrice = 0;
 
-// #Homework - create a function called calculateDiscount and use solution from step 2.
+for (let i = 0; i < products.length; i++) {
+    totalPrice += products[i].price;
+}
+
+console.log("Total price:", totalPrice); // Output: Total price: 6.97
+
+
 
