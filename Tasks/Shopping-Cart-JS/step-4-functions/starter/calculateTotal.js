@@ -7,7 +7,7 @@
 // Define a function called calculateTotal to calculate total price
 // should return the total price of all products
 // should take an array of product objects as a parameter
-// should be invoked with the products array ie. calculateTotal(products)
+// should be invoked with the products array ie. calculateTotal(products), calculateTotal([product1, product2, product3])  
 // should print the result
 
 // Initialize products

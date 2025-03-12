@@ -13,6 +13,7 @@ for (let i = 1; i <= 100; i++) {
         ('exiting..')
         break; // exiting..
     }
+
     // skip...the rest of the statement
     console.log(i);
 }

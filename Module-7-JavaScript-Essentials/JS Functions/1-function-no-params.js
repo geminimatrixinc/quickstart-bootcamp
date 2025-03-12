@@ -5,6 +5,4 @@ function sayHello() {
 }
 
 
-
-
-sayHello()
+sayHello() // invoke it!!

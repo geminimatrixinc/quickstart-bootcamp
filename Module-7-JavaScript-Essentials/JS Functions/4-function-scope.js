@@ -1,6 +1,6 @@
 
 // GLOBAL SCOPE
-var HST_TAX = 0.13;
+const HST_TAX = 0.13;
 
 function calculateTax (price) {
     // LOCAL SCOPE

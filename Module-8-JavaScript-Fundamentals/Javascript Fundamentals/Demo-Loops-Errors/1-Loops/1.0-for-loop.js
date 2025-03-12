@@ -6,6 +6,7 @@ const n = 100;
 // looping from i = n to 1
 // in each iteration, i is decreased by 1
 for(let i = n; i >= 1; i-- ) {
+    debugger
     // adding i to sum in each iteration
     sum += i; // sum = sum + i
 }
@@ -32,3 +33,9 @@ for(;;) {
  
 
 ///Ctrl X + Ctrl C - terminates node shell
+
+var tempString = "some string value"
+
+for(var i = 0; i < tempString.length; i++) {
+    console.log(tempString[i])
+}
