@@ -4,7 +4,7 @@ let products = [
     { id: 2, name: "Bread", price: 1.99 }
 ];
 
-const totalPrice = 5000; // global total price
+//const totalPrice = 5000; // global total price
 
 
 // function declaration
