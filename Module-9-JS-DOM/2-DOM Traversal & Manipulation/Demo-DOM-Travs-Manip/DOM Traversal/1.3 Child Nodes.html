@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Get Child Elements</title>
+</head>
+<body>
+  <ul class="list">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+    <li><a href="#">Link 5</a></li>
+  </ul>
+
+  <script>
+      //CHILD ELEMENTS - TRAVERSE DOWNWARD
+      // All Child Nodes
+      const listItems = document.querySelectorAll('li')
+
+      const firstItem = listItems[0]
+      const secondItem = listItems[1]
+      const thirdItem = listItems[2]
+      const fourthItem = listItems[3]
+      const fifthItem = listItems[4]
+
+      console.log(firstItem)
+      console.log(secondItem)
+      console.log(thirdItem)
+      console.log(fourthItem)
+      console.log(fifthItem)
+
+
+  </script>
+</body>
+</html>

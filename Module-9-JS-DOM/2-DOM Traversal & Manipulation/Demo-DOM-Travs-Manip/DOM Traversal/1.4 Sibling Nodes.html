@@ -1,0 +1,42 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Siblings</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li class="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>
+        <li>About Us</li>
+    </ul>
+    
+    <script>
+        // TRAVERSING - SIDEWAYS
+        var menu = document.getElementById('menu');
+        console.log(menu);
+
+        let current = document.querySelector('.current');
+        console.log(current);
+
+
+        // previous sibling
+        let prevSiblings = current.previousElementSibling;
+        console.log(prevSiblings);
+
+        // next sibling
+        let nextSibling = current.nextElementSibling;
+        console.log(nextSibling);
+
+        console.log(current.parentElement.parentElement.parentElement.nextElementSibling)
+    </script>
+</body>
+</html>

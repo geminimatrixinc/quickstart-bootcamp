@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript parentNode Example</title>
+</head>
+<body>
+    <div id="main">
+        <p class="note">This is a note!</p>
+        <ul class="list">
+            <li><a href="#"><span>Link 1</span></a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+          </ul>
+    </div>
+
+    <script>
+        //PARENT ELEMENTS - TRAVERSE UPWARD
+        let note = document.querySelector('.note');
+        console.log(note.parentNode);
+
+        // CLOSEST
+        const firstLink = document.querySelector('a')
+        const list = firstLink.closest('.list')
+
+        console.log(list)
+    </script>
+</body>
+</html>

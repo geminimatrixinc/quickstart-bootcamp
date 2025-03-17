@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript innerHTML</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Services</li>
+    </ul>
+    <div>asdfsadf</div>
+    <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div> <div>asdfsadf</div>
+    <script>
+        let menu = document.getElementById('menu');
+
+        // create new li element
+        let li = document.createElement('li');
+        li.textContent = 'About Us';
+        // add it to the ul element
+        menu.appendChild(li);
+
+        console.log(menu.innerHTML);
+
+        document.body.innerHTML = '';
+    </script>
+</body>
+</html>

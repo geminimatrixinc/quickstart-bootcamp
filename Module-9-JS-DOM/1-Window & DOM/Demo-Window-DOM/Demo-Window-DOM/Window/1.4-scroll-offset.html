@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  height: 2000px;
+  width: 2000px;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to scroll the document window by 100px horizontally and vertically.</p>
+
+<p><strong>Note:</strong> The pageXOffset and pageYOffset properties are not supported in IE8 and earlier.</p>
+
+<button onclick="myFunction()" style="position:fixed;">Click me to scroll</button><br><br>
+
+<div>
+</div>
+
+<script>
+function myFunction() {
+  window.scrollBy(100, 100);
+  alert("pageXOffset: " + window.pageXOffset + ", pageYOffset: " + window.pageYOffset);
+}
+</script>
+
+</body>
+</html>

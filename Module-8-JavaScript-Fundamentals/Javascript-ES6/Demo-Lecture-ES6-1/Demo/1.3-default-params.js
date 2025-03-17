@@ -7,7 +7,7 @@ function sum(x = 3, y = 5) {
 
 console.log(sum(5, 15));  // 20 
 console.log(sum(7));        // 12
-console.log(sum());          // 8
+console.log(sum(undefined, undefined));          // 8
 
 
 // quick way prevent NAN, protecting against undefined var...

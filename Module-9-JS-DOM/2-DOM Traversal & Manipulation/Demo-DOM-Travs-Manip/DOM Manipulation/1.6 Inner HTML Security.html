@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript innerHTML</title>
+</head>
+
+<body>
+    <div id="main"></div>
+    <script>
+
+
+    const main = document.getElementById('main');
+
+    main.innerHTML = '<script>alert("hello");</script>'';
+
+    // The alert() will show because the image cannot be loaded successfully. 
+    //It causes the onerror handler executes. 
+    //And this handler can execute any malicious code, not just a simple alert.
+    const externalHTML = `<img src='1' onerror='alert("Error loading image")'>`;
+    // shows the alert
+    main.innerHTML = externalHTML;
+    </script>
+</body>
+
+</html>

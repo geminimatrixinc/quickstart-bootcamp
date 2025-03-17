@@ -46,11 +46,12 @@ const profile = {
     hobbies: ['movies', 'music']
   };
   
-
+// old way ES5 of getting values
 var name = profile.name;
 var street = profile.address.street;
 var city = profile.address.city;
 var zipCode = profile.address.zipCode;
+
 
 // alias names, in destructoring..
  var { fullName = name } = profile;

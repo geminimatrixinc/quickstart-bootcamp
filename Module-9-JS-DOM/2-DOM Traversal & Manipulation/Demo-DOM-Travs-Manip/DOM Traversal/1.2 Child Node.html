@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Get Child Elements</title>
+</head>
+<body>
+  <ul id="menu">
+    <li class="first">Home</li>
+    <li>Products</li>
+    <li class="current">Customer Support</li>
+    <li>Careers</li>
+    <li>Investors</li>
+    <li>News</li>
+    <li class="last"><b>About Us</b></li>
+  </ul>
+
+  <script>
+      //CHILD ELEMENTS - TRAVERSE DOWNWARD
+      // All Child Nodes
+      var menu = document.getElementById('menu');
+      let nodes = menu.childNodes;
+      console.log(nodes);
+
+      // First Child Element ---> //#text = this whitespace creates a #text node in betwen <li>
+      let firstChild = menu.firstChild;
+      console.log(firstChild);
+
+      console.log(menu.firstElementChild);
+
+      // Last Child
+      let lastChild = menu.lastChild; 
+      console.log(lastChild);
+      // Last Child Element
+      let lastChildElement = menu.lastElementChild;
+      console.log(lastChildElement);
+
+      const listItems = document.querySelectorAll('li')
+
+
+  </script>
+</body>
+</html>

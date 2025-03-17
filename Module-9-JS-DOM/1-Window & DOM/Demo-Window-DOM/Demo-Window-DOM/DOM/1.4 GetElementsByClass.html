@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript getElementsByTagName() Demo</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="item">HTML</li>
+                    <li class="item">CSS</li>
+                    <li class="item highlight">JavaScript</li>
+                    <li class="item highlight disabled">TypeScript</li>
+                </ul>
+            </nav>
+            <h1>getElementsByClassName Demo</h1>
+            <button id="btnSubmit" class="disabled">Submit</button>
+        </header>
+    </div>
+
+    <script>
+       
+        let menu = document.getElementById('menu');
+        let items = document.getElementsByClassName('item highlight disabled');
+        let disabled = document.getElementsByClassName('disabled');
+
+        console.log(menu);
+        console.log(items);
+
+
+        window.onload = (event) => {
+        console.log('page is fully loaded');
+
+        let btnSubmit = document.querySelector('#btnSubmit')
+        //btnSubmit.onclick(() => alert('clicked'))
+        btnSubmit.addEventListener('click', () => { alert('cicked me')})
+        };
+
+    
+
+
+    </script>
+</body>
+</html>

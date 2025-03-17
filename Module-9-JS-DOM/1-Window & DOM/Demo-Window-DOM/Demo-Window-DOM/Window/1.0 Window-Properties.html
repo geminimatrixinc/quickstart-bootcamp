@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JavaScript Window Object Properties</title>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+
+<h3>JavaScript Window Object Properties Example</h3>
+
+<iframe src="http://cnn.com"></iframe>
+<iframe src="http://telsa.com"></iframe>
+<iframe src="http://georgebrown.com"></iframe>
+
+<script type="text/javascript">
+
+	for(var i=0; i<frames.length; i++)
+	{
+		frames[i].location = "http://www.google.ca"
+	}	
+
+	var myWindow;
+
+	function openRequestedPopup() {
+
+		window.open("https://www.netflix.com/", "Netflix_WindowName");
+	}
+
+	openRequestedPopup();
+
+</script>
+
+<!---Script blocks DOM load untill it's loaded and executed. 
+	If you place scripts at the end of <body> all of DOM has chance 
+  to load and render (page will "display" faster). ... 
+  In other hand placing it after <body> start or above will execute script 
+	  (where there's still no DOM elements)
+ -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JavaScript Window Object Methods</title>
+	<script type="text/javascript">
+		var mywin;
+		function openMidWin(url)
+		{
+			var wid = 500;
+			var hei = 200;
+			var winFeat = "width = " + wid + ", height = " + hei + " , status, resizable";
+			myWin = window.open(url, "subWind", winFeat);
+		}
+		function disp_alert()
+		{
+			alert("Hi, This is an alert box.");
+		}
+		function resize_win()
+		{
+			window.resizeBy(-100, -100)
+		}
+		function close_win()
+		{
+			if(window.confirm("Do you really want to close the browser ?"))
+				window.close();
+		}
+
+
+	</script>
+</head>
+<body>
+
+<h3>JavaScript Window Object Methods Example</h3>
+<input type="button" value="Open New Window" onclick="openMidWin('http://nhl.com')" />
+<input type="button" value="Alert" onclick="disp_alert()" />
+<input type="button" value="Resize Window" onclick="resize_win()" />
+<input type="button" value="Close Window" onclick="close_win()" />
+
+</body>
+</html>

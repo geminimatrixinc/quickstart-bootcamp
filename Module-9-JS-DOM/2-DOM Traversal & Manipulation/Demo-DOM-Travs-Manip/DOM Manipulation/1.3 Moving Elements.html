@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript appendChild() Demo</title>
+</head>
+<body>
+    <ul id="first-list">
+        <li>Everest</li>
+        <li>Fuji</li>
+        <li>Kilimanjaro</li>
+    </ul>
+    
+    <ul id="second-list">
+        <li>Karakoram Range</li>
+        <li>Denali</li>
+        <li>Mont Blanc</li>
+    </ul>
+    <script>
+        // get the first list
+        const firstList = document.querySelector('#first-list');
+        // take the first child element
+        const everest = firstList.firstElementChild;
+        // get the second list
+        const secondList = document.querySelector('#second-list');
+        // append the everest to the second list
+        secondList.appendChild(everest);
+    </script>
+</body>
+</html>

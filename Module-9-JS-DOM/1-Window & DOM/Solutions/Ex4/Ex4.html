@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS DOM Selectors</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="item">HTML</li>
+                    <li class="item">CSS</li>
+                    <li class="item highlight">JavaScript</li>
+                    <li class="item">TypeScript</li>
+                </ul>
+            </nav>
+            <h1>This is the first heading</h1>
+        </header>
+        <h2>This is the second heading</h2>
+        <h2>This is the third heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos culpa laudantium consequatur ea!
+            Quibusdam, iure obcaecati. Adipisci deserunt, alias repellat eligendi odit labore! Fugit iste sit
+            laborum debitis eos?
+            <span>This is an inline span!</span>
+        </p>
+        <button name="readBtn">Read More</button>
+    </div>
+
+    <script>
+        const getDOMElements = function () {
+                // ID
+                let menu = document.getElementById('#menu');
+                console.log(menu)
+                // CLASS NAME
+                let items = document.getElementsByClassName('item');
+                console.log(items);
+                let highlight = document.getElementsByClassName('highlight');
+                console.log(highlight);
+                // NAME 
+                let btnName = document.getElementsByName("readBtn");
+                console.log(btnName);
+                // TAG NAME
+                let firstHeading = document.getElementsByTagName('h1');
+                console.log(firstHeading );
+                let headings = document.getElementsByTagName('h2');
+                console.log(headings);
+        }
+        getDOMElements();
+
+    </script>
+</body>
+</html>

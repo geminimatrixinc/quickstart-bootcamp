@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript removeChild()</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About Us</li>
+    </ul>
+    <script>
+        let menu = document.getElementById('menu');
+        menu.removeChild(menu.lastElementChild);
+
+        menu.innerHTML = '';
+        // remove --- all child elements 
+        // while (menu.firstChild) {
+        //         menu.removeChild(menu.firstChild);
+        //  }
+    </script>
+</body>
+</html>

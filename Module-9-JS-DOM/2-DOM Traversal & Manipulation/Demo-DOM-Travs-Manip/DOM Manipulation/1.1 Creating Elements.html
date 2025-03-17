@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+
+    <script>
+        let div = document.createElement('div');
+        div.id = 'content';
+        div.innerHTML = '<p>CreateElement example</p>';
+        document.body.appendChild(div);
+
+        let span = document.createElement('span');
+        span.textContent = "hello i'm span";
+
+        document.body.appendChild(span);
+
+        const addChildren = function() {
+            for(var i=0; i < 100; i++) {
+                let span2 = document.createElement('span');
+                //span2.childNodes.appendChild(span2)
+                span2.innerHTML = "<b>\"hello i'm span \" + i</b><br/>";
+                div.appendChild(span2);
+            }
+        }
+
+       addChildren();
+    </script>
+</body>
+</html>

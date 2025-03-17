@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript textContent Demo</title>
+</head>
+<body>
+    <div id="note">
+        JavaScript textContent Demo!
+        <span style="display:none">Hidden Text!</span>
+        <!-- my comment -->
+    </div>
+
+   
+    <script>
+       // node - text content
+       let note = document.getElementById('note');
+       console.log(note.textContent);
+       // node - inner text
+        console.log(note.innerText);
+    </script>
+</body>
+</html>
