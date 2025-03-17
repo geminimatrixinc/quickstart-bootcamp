@@ -1,0 +1,53 @@
+<!-- Task 7: JavaScript DOM
+ 
+Step 1: Access the Cart Container
+
+- Retrieve the cart items container using *getElementById*.
+- Log this element to confirm correct selection.
+
+Step 2: Log Item Prices
+- Use *querySelector* to select the price of each item in the cart.
+- Output each price to the console to ensure correct selection.
+
+Step 3: Calculate Total Price
+- Convert price values from strings to numbers.
+- Sum the prices and log the total. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+</head>
+<body>
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="items">
+            <div class="item">
+                <span id="itemName1">Apple</span> -
+                <span id="itemPrice1">$1.00</span>
+            </div>
+            <div class="item">
+                <span id="itemName2">Banana</span> -
+                <span id="itemPrice2">$0.50</span>
+            </div>
+            <div class="item">
+                <span id="itemName3">Carrot</span> -
+                <span id="itemPrice3">$0.30</span>
+            </div>
+        </div>
+        <h3>Your Cart</h3>
+        <ul id="cartItems"></ul>
+        <strong>Total: $<span id="totalPrice">0</span></strong>
+    </div>
+
+    <script>
+        (function() {
+            // Start your code here
+            // This function will automatically execute when the page loads
+        })();
+    </script>
+</body>
+</html>
