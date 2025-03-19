@@ -5,15 +5,24 @@
     </head>
     <body>
         <p id="message">zyzyzyzyzy</p>
-        <p id="message">A paragraph</p>
+        <p id="message-para">A paragraph</p>
      
     </body>
 
 </html>
 <script>
     const findMessage = function () {
+
         const p = document.getElementById('message');
         console.log(p);
+
+        const para = document.getElementById('message-para');
+        console.log(para);
+
+        para.style.backgroundColor = 'blue';
+        para.style.color = 'white';
     }
+    
+    
     findMessage();
 </script>

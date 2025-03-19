@@ -44,10 +44,26 @@ Step 3: Calculate Total Price
     </div>
 
     <script>
-        (function() {
-            // Start your code here
-            // This function will automatically execute when the page loads
+       (function() {
+            // Retrieve the cart items list
+            let cartItems = document.getElementById('cartItems');
+            console.log(cartItems);
+
+            // Retrieve and log individual prices
+            let price1 = document.querySelector('#itemPrice1').textContent;
+            let price2 = document.querySelector('#itemPrice2').textContent;
+            let price3 = document.querySelector('#itemPrice3').textContent;
+            
+            console.log(price1, price2, price3);
+
+            // Calculate the total price manually
+            let total = parseFloat(price1.slice(1)) + parseFloat(price2.slice(1)) + parseFloat(price3.slice(1));
+            console.log("Calculated Total: $", total);
+
+            // Optionally, update the total in the DOM
+            document.getElementById('totalPrice').textContent = total.toFixed(2);
         })();
+
     </script>
 </body>
 </html>

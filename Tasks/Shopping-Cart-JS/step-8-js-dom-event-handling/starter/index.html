@@ -1,0 +1,36 @@
+<!-- 
+Task: Simple Shopping Cart Interaction with Single Item
+
+Objective:
+Learn basic DOM manipulation and event handling by creating a simple shopping cart interface that allows users to add 
+a generic item to their cart and see the total price update automatically.
+
+Task Description:
+Develop a minimalistic shopping cart where users can add the same item multiple times. 
+The total price should update dynamically as items are added 
+
+Hint: 
+- use document.querySelector to select elements by class name and ID.
+- use event.addEventListener to attach events to elements.
+- use the element.innerText property to update the total price.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Single Item Shopping Cart</title>
+</head>
+<body>
+<h1>Simple Shopping Cart</h1>
+<div id="cart">
+    <div class="item">
+        <span class="name">Generic Item</span>
+        <span class="price">$1.00</span>
+        <button class="add">Add to Cart</button>
+    </div>
+</div>
+<h3>Total: <span id="total">$0.00</span></h3>
+<script src="cart.js"></script>
+</body>
+</html>
