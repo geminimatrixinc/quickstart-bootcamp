@@ -1,3 +1,5 @@
+
+// window loads..
 document.addEventListener('DOMContentLoaded', () => {
     initializeCart();
 });
@@ -5,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeCart() {
     alert('Cart initialization');
+
+    // Add event listener to the add to cart button
 }
 function updateTotal(totalPrice) {
     console.log('updateTotal', totalPrice);

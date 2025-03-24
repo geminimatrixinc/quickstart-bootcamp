@@ -15,13 +15,13 @@ function calculateTotal(products) {
     for (let i = 0; i < products.length; i++) {
         totalPrice += products[i].price;
     }
-
+    console.log(totalPrice);
     return totalPrice;
 }
 
 // function expression
 var calculateTotal2 = function() { console.log("Calculating total price...") }; // annoymous function
 
-calculateTotal2(); // calculate
+calculateTotal(products); // calculate
 
 console.log(calculateTotal2)
