@@ -1,0 +1,76 @@
+ body {
+        margin: 0;
+    }
+
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+input, select {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  width: 250px;
+}
+
+.app {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  padding: 2rem;
+  text-align: center;
+}
+.crypto-container {
+  justify-content: center;
+  margin-top: 1rem;
+  /* responsive flex  box */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+}
+
+.crypto-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 275px; /* Adjust the width to fit more data */
+  text-align: center;
+  transition: transform 0.2s;
+
+  /* Adding a subtle hover effect for better UX */
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.crypto-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.crypto-card h2 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.crypto-card p {
+  color: #34495e;
+  margin: 0.2rem 0;
+}
+
+/* Style for positive 24h change */
+.crypto-card p[data-positive="true"] {
+  color: #27ae60;
+}
+
+/* Style for negative 24h change */
+.crypto-card p[data-positive="false"] {
+  color: #e74c3c;
+}

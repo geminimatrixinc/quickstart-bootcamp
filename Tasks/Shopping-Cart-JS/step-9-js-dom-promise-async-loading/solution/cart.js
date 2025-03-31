@@ -23,6 +23,12 @@
 
 // - Calculate and display the updated total price after the simulated delay.
 
+// original
+window.onload = function() { 
+    console.log(`The page has been loaded`);
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     let totalPrice = 0;
     const itemPrice = 10.00; // Fixed price for each item
@@ -34,23 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingLabel.style.display = 'block'; // Show loading label
 
         // Simulate server processing delay
-       // 1. create delay - setTimeout
-       // 2. hide loading label
-       //3 update the price
-
-       const processLoading = () => {
-        console.log(`delay for 3 seconds`)
-
-        loadingLabel.style.display = 'none';
-
-        totalPrice += itemPrice;
-        updateTotal();
-        };
-
-
-         setTimeout(processLoading, 3000)
-
-
+            // Simulate server processing delay
+            setTimeout(() => {
+                totalPrice += itemPrice; // Update total price
+                updateTotal(); // Update UI
+                loadingLabel.style.display = 'none'; // Hide loading label
+            }, 2000); // Simulate a 2-second delay
+       
     });
 
     function updateTotal() {

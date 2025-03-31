@@ -1,5 +1,6 @@
-const promise1 = new Promise((resolve, reject) => setTimeout(resolve, 500, 'one'));
-const promise2 = new Promise((resolve, reject) => setTimeout(reject, 100, 'two'));
+
+const promise1 = new Promise((resolve, reject) => setTimeout(resolve, 5000, 'one'));
+const promise2 = new Promise((resolve, reject) => setTimeout(reject, 2000, 'two'));
 
 Promise.race([promise1, promise2]).then(value => {
     console.log('Resolved:', value);

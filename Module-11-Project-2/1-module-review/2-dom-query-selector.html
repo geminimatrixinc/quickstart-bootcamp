@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript with HTML</title>
+    <script>
+        // Select a single element
+        const heading = document.querySelector("h1");
+        heading.style.color = "blue"; // Change heading color to blue
+
+        // Select multiple elements
+        const listItems = document.querySelectorAll(".item");
+        listItems.forEach(item => {
+            item.style.color = "red"; // Change all list item colors to red
+        });
+
+    </script>
+</head>
+<body>
+    <h3 id="title">Hello World</h3>
+</body>
+</html>

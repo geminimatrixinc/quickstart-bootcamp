@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header-banner {
+            background-color: #0056b3; /* Adjusted to a darker shade for better contrast */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .btn-submit {
+            background-color: #3827a3; /* Changed to a high-contrast green for better visibility */
+            color: #ffffff;
+        }
+        .text-light {
+            color: #343a40; /* Changed to a darker color to improve readability */
+        }
+        a {
+            color: #0056b3; /* Adjusted link color for better contrast against light backgrounds */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="container mt-5">
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" placeholder="Write your message" required></textarea>
+            </div>
+            <img src="https://via.placeholder.com/100" alt="Placeholder representing an example image"> <!-- Added descriptive alt attribute -->
+            <p class="text-dark">Read our <a href="#" class="text-primary">Privacy Policy</a></p> <!-- Enhanced link contrast and accessibility -->
+            
+            <button type="submit" class="btn btn-submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

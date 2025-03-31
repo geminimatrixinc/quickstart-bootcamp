@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript with CSS</title>
+    <script>
+        
+        function appendToDOM () {
+            const container = document.getElementById("container");
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "This is a dynamically added paragraph.";
+            container.appendChild(newParagraph);
+
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            debugger
+            appendToDOM(); 
+        });
+      
+    </script>
+</head>
+<body>
+    <h1 id="title">Hello World</h1>
+    <p>Hello World this is a paragraph</p>
+    <div id="container"></div>
+</body>
+</html>
