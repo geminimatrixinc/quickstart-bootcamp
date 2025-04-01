@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript with CSS</title>
     <script>
-        // const paragraph = document.querySelector("p");
-        // paragraph.style.fontSize = "20px"; // Change text size
-        // paragraph.style.backgroundColor = "purple"; // Change background color
+        
+        const changeParagraph = () => {
+            const paragraph = document.querySelector("p");
+            paragraph.style.fontSize = "20px"; // Change text size
+            paragraph.style.backgroundColor = "purple"; // Change background color
+        }
+      
 
         window.addEventListener("DOMContentLoaded", function() {
             debugger
             const title = document.querySelector("#title");
             title.style.color = "blue"; // Change title color to blue
+
+            changeParagraph();
         });
       
     </script>
