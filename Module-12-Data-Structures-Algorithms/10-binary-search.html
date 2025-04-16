@@ -1,0 +1,40 @@
+<!-- Try in CodePen or local file -->
+ <!-- 
+
+// Time complexity: O(log n)
+// Space complexity: O(1)
+// Fast and efficient for searching in sorted arrays.
+// Cuts the search space in half each time — very scalable.
+
+
+    https://binary-search-visualization.netlify.app/
+    https://yongdanielliang.github.io/animation/web/BinarySearchNew.html
+
+    // https://www.youtube.com/watch?v=MFhxShGxHWc
+-->
+
+<pre id="output"></pre>
+<script>
+function binarySearchVisualizer(arr, target) {
+    let left = 0, right = arr.length - 1;
+    let steps = [];
+
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+        steps.push(`Left: ${left}, Right: ${right}, Mid: ${mid}, Value: ${arr[mid]}`);
+
+        if (arr[mid] === target) {
+            steps.push("🎯 Target found!");
+            break;
+        } else if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    document.getElementById('output').textContent = steps.join("\n");
+}
+
+binarySearchVisualizer([1,2,4,7,9,12,15], 9);
+</script>

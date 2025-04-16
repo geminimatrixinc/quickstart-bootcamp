@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Handling</title>
     <script>
-        document.getElementById("clickButton")
-            .addEventListener("click", () => {
-                document.getElementById("message").textContent = "Button was clicked!";
-});
+
+        const handleClick = () => {
+            document.getElementById("message").textContent = "Button was clicked!";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("DOM fully loaded and parsed");
+
+            const button = document.getElementById("clickButton")
+            button.addEventListener("click", handleClick);
+
+            const resetButton = document.getElementById("resetButton")
+            resetButton.addEventListener("click", () => {
+                document.getElementById("message").textContent = "";
+            });
+        });
+
+
+  
+
 
     </script>
 </head>
 <body>
     <h1>Event Handling Example</h1>
     <button id="clickButton">Click Me</button>
+    <button id="resetButton">Reset</button>
     <p id="message"></p>
 </body>
 </html>

@@ -1,4 +1,7 @@
 document.getElementById("triggerError").addEventListener("click", () => {
+    debugger
+    let result = undefinedFunction();
+
     try {
         let result = undefinedFunction(); // This function does not exist
     } catch (error) {

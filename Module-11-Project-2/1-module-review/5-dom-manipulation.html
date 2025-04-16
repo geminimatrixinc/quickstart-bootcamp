@@ -14,9 +14,26 @@
 
         }
 
+        function deleteFromDOM () {
+            debugger
+            const container = document.getElementById("container");
+            // const paragraphToDelete = container.querySelector("p:last-child");
+            // if (paragraphToDelete) {
+            //     container.removeChild(paragraphToDelete);
+            // }
+
+            //container.innerHTML = ""; 
+
+            document.body.innerHTML = "";
+            
+        }
+    
+
         window.addEventListener("DOMContentLoaded", function() {
             debugger
             appendToDOM(); 
+
+            deleteFromDOM();
         });
       
     </script>
@@ -25,5 +42,6 @@
     <h1 id="title">Hello World</h1>
     <p>Hello World this is a paragraph</p>
     <div id="container"></div>
+    <div id="hackme"></div>
 </body>
 </html>
