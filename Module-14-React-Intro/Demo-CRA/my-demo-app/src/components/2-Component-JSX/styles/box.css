@@ -1,0 +1,12 @@
+
+
+.my-box {
+  background-color: lightcoral;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.my-box.active {
+  background-color: lightgreen;
+}

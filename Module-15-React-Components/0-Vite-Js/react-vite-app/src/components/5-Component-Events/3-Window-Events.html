@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Load Events</title>
+</head>
+
+<body>
+    <script>
+
+        function DOMLoadedCallback() {
+            console.log('The DOM is fully loaded.');
+        }
+
+        window.addEventListener('DOMContentLoaded', DOMLoadedCallback); // invoke callback, when the event fires
+
+        var handleLoad = (event) => {
+            console.log(event)
+            console.log('The page is fully loaded.');
+        }
+
+        window.addEventListener('load', handleLoad);
+       
+        addEventListener('beforeunload', (event) => {
+            // show the confirmation dialog
+            //event.preventDefault();
+            console.log('before unload');
+        });
+
+        addEventListener('unload', (event) => {
+            debugger;
+            console.log('unload');
+        });
+    </script>
+</body>
+</html>

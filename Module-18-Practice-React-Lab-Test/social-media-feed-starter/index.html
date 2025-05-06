@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Feed Application</title>
+    <link rel="stylesheet" href="./styles.css"> 
+</head>
+<body>
+    <div class="app">
+        <!-- Feed Component JSX-->
+        <div class="feed">
+            <h1>Social Feed</h1>
+
+            <!-- Post Component JSX-->
+            <p>React is the best front end library</p>
+            <p>10 Likes</p>
+            <div class="post">
+                <p class="post-message">Post Message</p>
+                <button class="like-button">Like</button>
+                <h4>Comments:</h4>
+                <form id="comment-form">
+                    <input
+                        id="control-input"
+                        type="text"
+                        placeholder="Add a comment"
+                        aria-label="Comment input"
+                        required
+                    />
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- //  Post Component JSX -->
+    </div>
+    <!-- // Feed Component JSX -->
+</body>
+</html>
