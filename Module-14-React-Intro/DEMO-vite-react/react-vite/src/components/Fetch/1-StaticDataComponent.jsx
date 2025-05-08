@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StaticDataComponent = () => {
+export const StaticDataComponent = () => {
     // Static data
     const data = [
         { id: 1, name: 'John Doe' },
@@ -22,4 +22,3 @@ const StaticDataComponent = () => {
     );
 };
 
-export default StaticDataComponent;

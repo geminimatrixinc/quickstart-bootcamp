@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Window and Document Events Example</title>
+  <style>
+    /* Adding some styling to make the page scrollable */
+    body {
+      height: 2000px;
+    }
+  </style>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <h1>Event Handling Examples</h1>
+
+  <script>
+    // Window Load Event
+    window.addEventListener('load', function() {
+        debugger
+      console.log('Window Loaded');
+    });
+
+    // Window Unload Event
+    window.addEventListener('beforeunload', function(event) {
+      console.log('Window Unloading');
+      // Uncomment below line to display a dialog box before unloading
+      // event.returnValue = 'Are you sure you want to leave?';
+    });
+
+    // Window Scroll Event
+    window.addEventListener('scroll', function() {
+        debugger
+      console.log('Window Scrolled');
+    });
+
+    // DOM Ready Event
+    document.addEventListener('DOMContentLoaded', function() {
+        debugger
+      console.log('DOM Content Loaded');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feed {
+  margin-top: 20px;
+}
+
+.post {
+  background-color: #1e1e1e; /* Darker card background */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.like-button {
+  background-color: #ff4081; /* Pink color for like button */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover {
+  background-color: #ff79b0; /* Lighter pink on hover */
+}
+
+.comment {
+  margin: 5px 0;
+}
+
+.comment-input {
+  width: 70%;
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.submit-button {
+  padding: 5px 10px;
+  background-color: #6200ee; /* Purple color */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #7c4dff; /* Lighter purple on hover */
+}
