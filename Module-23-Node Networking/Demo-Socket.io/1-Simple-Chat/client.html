@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.io Chat</title>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js" integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+</head>
+  <body>
+    <h1>Socket.IO Chat</h1>
+    <input id="message" type="text" placeholder="Enter your message" />
+    <button id="send">Send</button>
+    <ul id="messages"></ul>
+
+    <script>
+      // Connect to the socket server
+      const socket = io('http://127.0.0.1:3000');
+      
+      // Display received messages in the list
+      socket.on('chat message', (msg) => {
+        const item = document.createElement('li');
+        item.textContent = msg;
+        document.getElementById('messages').appendChild(item);
+      });
+
+      // Send message on button click
+      document.getElementById('send').onclick = function() {
+        console.log('Send message');
+        const msg = document.getElementById('message').value;
+        socket.emit('chat message', msg);
+        document.getElementById('message').value = '';
+      };
+    </script>
+  </body>
+</html>

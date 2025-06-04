@@ -1,0 +1,15 @@
+{
+  "name": "module-7-node-fundamentals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "hello": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "datejs": "^1.0.0-rc3"
+  }
+}

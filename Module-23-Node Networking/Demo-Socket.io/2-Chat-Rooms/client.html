@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.io Rooms Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js" integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  </head>
+  <body>
+    <h1>Socket.IO Chat with Rooms</h1>
+    <input id="room" type="text" placeholder="Enter room name" />
+    <button id="joinRoom">Join Room</button>
+    <input id="message" type="text" placeholder="Enter message" />
+    <button id="sendMessage">Send Message</button>
+    <ul id="messages"></ul>
+
+    <script>
+      const socket = io('http://127.0.0.1:3000');
+
+      // Join room
+      document.getElementById('joinRoom').onclick = function() {
+        const room = document.getElementById('room').value;
+        socket.emit('join room', room);
+      };
+
+      // Send message to room
+      document.getElementById('sendMessage').onclick = function() {
+        const room = document.getElementById('room').value;
+        const msg = document.getElementById('message').value;
+        socket.emit('chat message', room, msg);
+        document.getElementById('message').value = '';
+      };
+
+      // Display messages
+      socket.on('chat message', (msg) => {
+        const item = document.createElement('li');
+        item.textContent = msg;
+        document.getElementById('messages').appendChild(item);
+      });
+    </script>
+  </body>
+</html>

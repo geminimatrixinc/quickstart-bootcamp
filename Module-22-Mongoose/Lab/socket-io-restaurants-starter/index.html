@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.io</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  </head>
+  <body>
+    
+    <script>
+     
+      var socket;
+
+      $( document ).ready(function() {
+        console.log( "ready!" );
+
+        	//make connection
+	      socket = io.connect('http://localhost:8080')
+
+      // event listeners from server
+      socket.on('connect', function(){ console.log('server connected'); });
+      socket.on('disconnect', function(){ console.log("server disconnected"); });
+      socket.on('msgreceived', function(){ console.log('General Chat: server received message!') });
+      
+      // set up restarant socket event handlers here..
+      socket.on('restaurants-data', function(data) 
+      { console.log(`restaurant data received from server: ${data}`)});
+      });
+
+     
+  
+      const connect = () => { socket.connect(); }  
+      const disconnect = () => { socket.disconnect(); }
+      const send = () => { socket.send("Hello Server!");};
+      // set up socket emitters below..
+      const getRestaurants = () => socket.emit('get-restaurants');
+      const getOrders = () => alert('Get Orders');
+      const createOrder = () => alert('Place Order!');
+    </script>
+    
+    <h1>Socket.io Lab</h1>
+    <button id="connect" onClick='connect()'/>Connect</button>
+    <button id="disconnect" onClick='disconnect()'>Disconnect</button>
+    <button id="send" onClick='send()'/>Send Message</button><br /><br/>
+    <button id="getRestaurants" onClick='getRestaurants()'/>Get Restaurants</button>
+    <button id="getOrders" onClick='getOrders()'/>Get Orders</button>
+    <button id="createOrder" onClick='createOrder()'/>Place Order</button>
+  </body>
+</html>
